@@ -16,6 +16,14 @@ class Bag
     @candies << candy
   end
 
+  def <<(candy)
+    @candies << candy
+  end
+
+  def remove
+    candies.pop
+  end
+
   def contains?(candy_arg)
     @candies.map do |candy|
       if candy.type == candy_arg
